@@ -1,0 +1,69 @@
+<html>
+<head>
+<style src = "save.css">
+.btns {
+    text-align: center;
+    
+}
+
+.scoring {
+    text-align: center;
+    font: bolder;
+    font-size: 20px;
+    color:darkblue;
+}
+
+.btn {
+    
+    background-color: royalblue;
+    padding: 5px;
+    margin: 25px;
+}
+
+</style>
+
+
+&nbsp;
+<title>Please Work Save D:</title>
+<h1 id="toptext" style = "text-align: center;">Testing Saving via localStorage</h1>
+
+<p style="text-align: center;">Please Save the Information Below:</p>
+<p style="text-align: center;">------------------------------------------------</p>
+
+
+</head>
+
+<body style = "background-color: crimson;">
+
+<div class = "btns">
+    <button id="btn1" class = "btn" style = "height: 48px; width: 144px;" onclick = "addtoscore(clickingPower)">Click Me!</button>
+        
+    <button id="btn1" class = "btn" style = "height: 48px; width: 144px;" onclick="savegame">Save Me!</button>
+</div>
+        <div class="scoring">
+            <p><strong>Score: <span id="score">0</span></strong></p>
+        </div>
+&nbsp;
+
+<script src="save.js">
+
+var score = 0;
+var clickingPower = 1;
+
+    function addtoscore(amount) {
+	score = score + amount;
+	document.getElementById("score").innerHTML = score; //updates score
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
